@@ -417,6 +417,10 @@ address {
 	margin-top: 20px;
 }
 
+.footer-list {
+	min-width: 231px;
+}
+
 .footer-list-item:not(:last-child) {
 	margin-bottom: 9px;
 }
@@ -424,6 +428,7 @@ address {
 .footer > .container {
 	display: flex;
 	align-items: baseline;
+	justify-content: space-between;
 }
 
 .footer-social {
@@ -662,13 +667,26 @@ address {
 	margin-bottom: 30px;
 }
 
+.modal-icon-check {
+	fill: transparent;
+}
+
+.modal-check:checked + .modal-check-label span {
+	background-color: var(--color-accent);
+	border: none;
+}
+
+.modal-check:checked + .modal-check-label .modal-icon-check {
+	fill: var(--color-text-white);
+}
+
 .modal-form-btn {
 	min-width: 200px;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
 	letter-spacing: 0.06em;
-	padding: 10px 29px 10px 28px;
+	padding: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
